@@ -1,4 +1,7 @@
+# DEVELOPMENT MODE: Blocking search engines
+# When ready to go live, change Disallow to Allow
+# and update sitemap URL to your real domain
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://gg.dev/sitemap.xml
+# Sitemap: https://YOUR-DOMAIN.com/sitemap.xml

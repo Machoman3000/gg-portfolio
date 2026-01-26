@@ -1,124 +1,135 @@
 import type { Project, Writing, SocialLink } from "@/types";
 
+// ============================================================
+// TEMPLATE PROJECTS - Replace with your real projects
+// ============================================================
 export const projects: Project[] = [
   {
     id: "1",
-    title: "NEURAL_NET_VIS",
+    title: "[EXAMPLE] NEURAL_NET_VIS",
     slug: "neural-net-vis",
     description:
-      "WebGL-based neural network visualization. Real-time rendering of network architectures with interactive node exploration.",
+      "Template: WebGL-based neural network visualization. Replace this with your own project description.",
     status: "active",
     category: "WEBGL",
     technologies: ["Three.js", "React", "GLSL", "TypeScript"],
-    links: { github: "#", live: "#" },
+    links: { github: "#placeholder", live: "#placeholder" },
     featured: true,
   },
   {
     id: "2",
-    title: "CRYPTO_DASH",
+    title: "[EXAMPLE] CRYPTO_DASH",
     slug: "crypto-dash",
     description:
-      "Real-time cryptocurrency dashboard with price alerts and portfolio tracking. Built for speed and reliability.",
+      "Template: Real-time cryptocurrency dashboard. Replace this with your own project description.",
     status: "active",
     category: "FINTECH",
     technologies: ["Next.js", "WebSocket", "Tailwind", "PostgreSQL"],
-    links: { github: "#", live: "#" },
+    links: { github: "#placeholder", live: "#placeholder" },
     featured: true,
   },
   {
     id: "3",
-    title: "SYNTHWAVE_FM",
+    title: "[EXAMPLE] SYNTHWAVE_FM",
     slug: "synthwave-fm",
     description:
-      "Retro-futuristic music player with audio visualization. Procedural waveform generation and custom EQ.",
+      "Template: Retro-futuristic music player. Replace this with your own project description.",
     status: "completed",
     category: "AUDIO",
     technologies: ["Web Audio API", "Canvas", "React"],
-    links: { github: "#" },
+    links: { github: "#placeholder" },
     featured: false,
   },
   {
     id: "4",
-    title: "TERM_PORTFOLIO",
-    slug: "term-portfolio",
+    title: "GG_PORTFOLIO",
+    slug: "gg-portfolio",
     description:
       "This website. A cyberpunk-inspired portfolio with terminal aesthetics and smooth animations.",
     status: "wip",
     category: "WEB",
     technologies: ["Next.js", "Motion", "Tailwind"],
-    links: { github: "#", live: "#" },
+    links: { github: "https://github.com/Machoman3000/gg-portfolio", live: "#" },
     featured: true,
   },
   {
     id: "5",
-    title: "DATA_FORGE",
+    title: "[EXAMPLE] DATA_FORGE",
     slug: "data-forge",
     description:
-      "CLI tool for generating mock data. Supports JSON, CSV, SQL with customizable schemas.",
+      "Template: CLI tool for generating mock data. Replace this with your own project description.",
     status: "archived",
     category: "CLI",
     technologies: ["Node.js", "TypeScript", "Faker.js"],
-    links: { github: "#" },
+    links: { github: "#placeholder" },
     featured: false,
   },
   {
     id: "6",
-    title: "PIXEL_SORT",
+    title: "[EXAMPLE] PIXEL_SORT",
     slug: "pixel-sort",
     description:
-      "Image glitch art generator. Applies pixel sorting algorithms for aesthetic distortion effects.",
+      "Template: Image glitch art generator. Replace this with your own project description.",
     status: "completed",
     category: "CREATIVE",
     technologies: ["Python", "Pillow", "NumPy"],
-    links: { github: "#", live: "#" },
+    links: { github: "#placeholder", live: "#placeholder" },
     featured: false,
   },
 ];
 
+// ============================================================
+// TEMPLATE WRITINGS - Replace with your real blog posts
+// ============================================================
 export const writings: Writing[] = [
   {
     id: "1",
-    title: "Building a Cyberpunk Portfolio with Next.js",
+    title: "[EXAMPLE] Building a Cyberpunk Portfolio with Next.js",
     slug: "building-cyberpunk-portfolio",
     excerpt:
-      "How I built this site using Next.js 15, Tailwind CSS v4, and Motion for a retro-futuristic aesthetic.",
+      "Template: How I built this site using Next.js 15, Tailwind CSS v4, and Motion. Replace with your own writing.",
     tags: ["Next.js", "Design", "Tutorial"],
-    publishedAt: "2026-01-24",
+    publishedAt: "2025-01-24",
     readingTime: 8,
   },
   {
     id: "2",
-    title: "WebGL Shaders for Beginners",
+    title: "[EXAMPLE] WebGL Shaders for Beginners",
     slug: "webgl-shaders-beginners",
     excerpt:
-      "A practical introduction to fragment and vertex shaders. Make your first glowing orb.",
+      "Template: A practical introduction to fragment and vertex shaders. Replace with your own writing.",
     tags: ["WebGL", "GLSL", "Graphics"],
-    publishedAt: "2026-01-15",
+    publishedAt: "2025-01-15",
     readingTime: 12,
   },
   {
     id: "3",
-    title: "Why I Still Use RSS in 2026",
-    slug: "rss-in-2026",
+    title: "[EXAMPLE] Why I Still Use RSS",
+    slug: "rss-example",
     excerpt:
-      "The algorithmic feed is broken. Here's how I curate my own information diet.",
+      "Template: The algorithmic feed is broken. Replace with your own writing.",
     tags: ["Productivity", "Opinion"],
-    publishedAt: "2026-01-08",
+    publishedAt: "2025-01-08",
     readingTime: 5,
   },
 ];
 
+// ============================================================
+// SOCIAL LINKS - Update with your real profiles
+// ============================================================
 export const socialLinks: SocialLink[] = [
-  { name: "GitHub", url: "https://github.com/gg", icon: "github" },
-  { name: "LinkedIn", url: "https://linkedin.com/in/gg", icon: "linkedin" },
-  { name: "Twitter", url: "https://twitter.com/gg", icon: "twitter" },
+  { name: "GitHub", url: "https://github.com/Machoman3000", icon: "github" },
+  { name: "LinkedIn", url: "#update-your-linkedin", icon: "linkedin" },
+  { name: "Twitter", url: "#update-your-twitter", icon: "twitter" },
 ];
 
-// Profile data
+// ============================================================
+// PROFILE - Update with your real info
+// ============================================================
 export const profile = {
   name: "GG",
-  title: "Full-Stack Developer",
-  location: "San Francisco, CA",
-  bio: "Building digital experiences at the intersection of design and engineering. Passionate about creative coding, developer tools, and retro aesthetics.",
-  status: "Available for opportunities",
+  title: "Aspiring Full-Stack Developer",
+  location: "[Your Location]",
+  bio: "Learning to code and building digital experiences. Update this bio with your own story.",
+  status: "Learning & Building",
 };
