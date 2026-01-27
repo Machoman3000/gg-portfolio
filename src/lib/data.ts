@@ -13,7 +13,7 @@ export const projects: Project[] = [
     status: "wip",
     category: "WEB",
     technologies: ["Next.js", "Motion", "Tailwind"],
-    links: { github: "https://github.com/Machoman3000/gg-portfolio", live: "#" },
+    links: { github: "https://github.com/Machoman3000/gg-portfolio", live: "/" },
     featured: true,
   },
 ];
