@@ -60,6 +60,13 @@ export default function ProjectsPage() {
                 <ProjectCard key={project.id} project={project} />
               ))}
             </div>
+
+            {/* Coming soon message */}
+            <div className="mt-8 border border-border bg-surface p-6 text-center">
+              <p className="text-text-dim text-sm font-mono">
+                <span className="text-primary">&gt;</span> More projects coming soon...
+              </p>
+            </div>
           </div>
         </div>
 
