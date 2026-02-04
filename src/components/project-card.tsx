@@ -1,3 +1,6 @@
+"use client";
+
+import Link from "next/link";
 import type { Project } from "@/types";
 
 interface ProjectCardProps {
@@ -13,7 +16,8 @@ const statusStyles: Record<Project["status"], string> = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group relative bg-surface p-6 border border-border hover:border-primary/50 transition-colors min-h-[280px] flex flex-col">
+    <Link href={`/projects/${project.slug}`} className="block">
+      <article className="group relative bg-surface p-6 border border-border hover:border-primary/50 transition-colors min-h-[280px] flex flex-col">
       {/* Corner decoration */}
       <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-border group-hover:border-primary/50 transition-colors" />
       <div className="absolute top-0 right-0 w-4 h-4 border-t border-r border-border group-hover:border-primary/50 transition-colors" />
@@ -60,26 +64,29 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Links */}
       <footer className="flex gap-4 mt-auto">
         {project.links.live && (
-          <a
-            href={project.links.live}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-mono tracking-wider hover:text-primary transition-colors"
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(project.links.live, "_blank");
+            }}
+            className="text-xs font-mono tracking-wider hover:text-primary transition-colors cursor-pointer"
           >
             LIVE →
-          </a>
+          </span>
         )}
         {project.links.github && (
-          <a
-            href={project.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-mono tracking-wider text-text-dim hover:text-primary transition-colors"
+          <span
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(project.links.github, "_blank");
+            }}
+            className="text-xs font-mono tracking-wider text-text-dim hover:text-primary transition-colors cursor-pointer"
           >
             SOURCE
-          </a>
+          </span>
         )}
       </footer>
     </article>
+    </Link>
   );
 }

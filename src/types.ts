@@ -23,6 +23,7 @@ export interface Writing {
   title: string;
   slug: string;
   excerpt: string;
+  content?: string; // Full article content (markdown or plain text)
   tags: string[];
   publishedAt: string;
   readingTime: number;

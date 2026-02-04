@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { AnimatedLogo } from "@/components/animated-logo";
+import { projects, writings } from "@/lib/data";
 
 const navItems = [
   { href: "/projects", label: "PROJECTS", num: "01" },
@@ -97,11 +98,11 @@ export default function HomePage() {
           <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-[10px] tracking-widest text-text-dim">
             <div className="flex justify-between w-32 border-b border-border pb-1">
               <span>PROJECTS</span>
-              <span className="text-primary">06</span>
+              <span className="text-primary">{String(projects.length).padStart(2, "0")}</span>
             </div>
             <div className="flex justify-between w-32 border-b border-border pb-1">
               <span>WRITINGS</span>
-              <span className="text-primary">03</span>
+              <span className="text-primary">{String(writings.length).padStart(2, "0")}</span>
             </div>
             <div className="flex justify-between w-32 border-b border-border pb-1">
               <span>EXPERIENCE</span>
